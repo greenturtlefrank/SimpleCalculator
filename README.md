@@ -45,9 +45,9 @@ This is a compiler-based calculator that translates mathematical expressions int
 
 ### Supported Operators & Priority
 *   **Level 1**: `( )`, `++` (Prefix), `--` (Prefix)
-*   **Level 2**: `*`, `/` (Highest arithmetic priority)
+*   **Level 2**: `*`, `/`
 *   **Level 3**: `+`, `-`
-*   **Level 4**: `&`, `^`, `|` (Bitwise logic)
+*   **Level 4**: `&`, `^`, `|` (`&` > `^` > `|`) (Bitwise logic) 
 *   **Level 5**: `=` (Assignment)
 
 ### CPU Cycle Calculation (Performance Grading)
@@ -62,3 +62,6 @@ The total score depends on the efficiency of your generated code.
 | **Multiplication** | `MUL` | **30** |
 | **Division** | `DIV` | **50** |
 | **System Termination** | `EXIT` | **20** |
+
+### Note: Variable Initialization
+By default, the variables **x**, **y**, and **z** are initialized to 0 by the simulator. However, The compiler allows for custom initialization if needed in future hardware specifications.
